@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Team Leader | السودان 2035</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --sudanese-red: #D21034;
+            --sudanese-green: #007229;
+            --sudanese-black: #000000;
+            --sudanese-white: #FFFFFF;
+            --glass-bg: rgba(255, 255, 255, 0.8);
+        }
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f8f9fa;
+            color: var(--sudanese-black);
+            margin: 0;
+            padding: 0;
+            /* منع السكرول في البودي الرئيسي لضمان عمله في الحاويات الداخلية */
+            overflow: hidden; 
+            height: 100vh;
+        }
+        .main-scroll-container {
+            height: 100vh;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+            scroll-behavior: smooth;
+        }
+        .hyper-glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+        .neon-green-glow {
+            box-shadow: 0 0 15px rgba(0, 114, 41, 0.3);
+        }
+        .neon-red-glow {
+            box-shadow: 0 0 15px rgba(210, 16, 52, 0.3);
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        
+        .gradient-text-sd {
+            background: linear-gradient(90deg, var(--sudanese-red), var(--sudanese-green));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        @keyframes flow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .animate-flow {
+            background-size: 200% 200%;
+            animation: flow 5s ease infinite;
+        }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+    <script type="importmap">
+    {
+      "imports": {
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "react": "https://esm.sh/react@^19.2.3",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "@google/genai": "https://esm.sh/@google/genai@^1.38.0"
+      }
+    }
+    </script>
+  <script type="module" crossorigin src="/assets/index-C_Czs0ix.js"></script>
+</head>
+<body class="bg-gray-50">
+    <div id="root"></div>
+</body>
+</html>
